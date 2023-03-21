@@ -182,8 +182,7 @@ h2{
     margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between;
 }
 .step6 .step-images{
     width: 60%;
@@ -198,7 +197,8 @@ h2{
     height: 100%;
 }
 label{
-    width: 40%;
+    width: 47%;
+    margin-bottom: 16px;
 }
 .step3 label{
     width: 100%;
