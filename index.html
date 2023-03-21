@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz OTG - Biblioteca</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <img src="./img/brush.webp" alt="brush" id="brush1" />
+      <img src="./img/brush2.webp" alt="brush" id="brush2" />
+      <img id="logo" class="steps" src="./img/OTG.webp" alt="logo OTG" />
+      <div class="game-start hide-me">
+        <div class="header">
+          <div class="clip-text">
+            <h1>Qual livro da Biblioteca é você<span>?</span></h1>
+          </div>
+          <button>Começar</button>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="clip-text">
+          <h2 class="step-title">Question 1/5</h2>
+        </div>
+        <div class="progress-bar">
+          <div class="progressed-bar"></div>
+        </div>
+        <div class="step step1">
+          <h3>Escolha um livro que você leria em um apocalipse zumbi:</h3>
+          <div class="step-images">
+            <label>
+              <input type="radio" name="test" value="1" />
+              <img src="./img/o-poder-da-inteligencia-emocional.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="2" id="step1-img2" />
+              <img src="./img/porque-nao-podemos-esperar.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="3" />
+              <img src="./img/o-poder-do-subconsciente.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="4" />
+              <img src="./img/siga-em-frente.jpg" alt="" />
+            </label>
+          </div>
+          <button class="next-button" onclick="stepNext()">Próxima</button>
+        </div>
+        <div class="step step2">
+          <h3>Elimine um livro pela capa:<br><br><br></h3>
+          <div class="step-images">
+            <label>
+              <input type="radio" name="test" value="1" />
+              <img src="./img/o-poder-do-habito.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="2" id="step1-img2" />
+              <img src="./img/a-alma-artesa.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="3" />
+              <img src="./img/pequeno-manual-antirracista.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="4" />
+              <img src="./img/estetica-e-semiotica.jpg" alt="" />
+            </label>
+          </div>
+          <button class="next-button" onclick="stepNext()">Próxima</button>
+        </div>
+        <div class="step step3">
+          <h3>Qual desses lugares você iria para ler:<br><br></h3>
+          <div class="step-images">
+            <label>
+              <input type="radio" name="test" value="1" />
+              <span>Biblioteca OTG</span>
+            </label>
+            <label>
+              <input type="radio" name="test" value="2" id="step1-img2" />
+              <span>Shopping</span>
+            </label>
+            <label>
+              <input type="radio" name="test" value="3" />
+              <span>Balada</span>
+            </label>
+            <label>
+              <input type="radio" name="test" value="4" />
+              <span>Ônibus</span>
+            </label>
+          </div>
+          <button class="next-button" onclick="stepNext()">Próxima</button>
+        </div>
+        <div class="step step4">
+          <h3>Escolha a foto que você tiraria com seu livro:<br><br></h3>
+          <div class="step-images">
+            <label>
+              <input type="radio" name="test" value="1" />
+              <img src="./img/foto 1.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="2" id="step1-img2" />
+              <img src="./img/foto 2.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="3" />
+              <img src="./img/foto 3.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="4" />
+              <img src="./img/foto 3.jpg" alt="" />
+            </label>
+          </div>
+          <button class="next-button" onclick="stepNext()">Próxima</button>
+        </div>
+        <div class="step step5">
+          <h3>Escolha uma bebida:<br><br></h3>
+          <div class="step-images">
+            <label>
+              <input type="radio" name="test" value="1" />
+              <img src="./img/coca.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="2" id="step1-img2" />
+              <img src="./img/chá.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="3" />
+              <img src="./img/CAFÉ.jpg" alt="" />
+            </label>
+            <label>
+              <input type="radio" name="test" value="4" />
+              <img src="./img/drink.jpg" alt="" />
+            </label>
+          </div>
+          <button class="next-button" onclick="stepNext()">Próxima</button>
+        </div>
+        <div class="step step6">
+          <h3>Você tirou:<br><br></h3>
+          <div class="step-images">
+            <img src="./img/a-alma-artesa.jpg" alt="">
+          </div>
+          <h3>Esse livro é uma ótima fonte para entender os conceitos básicos de marketing digital, as principais plataformas e estratégias para engajar os clientes nessa era digital. </h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
