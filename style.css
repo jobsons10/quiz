@@ -45,12 +45,13 @@
 .app{
     background-color: #000000;
     padding-top: 36px;
+
     text-align: center;
     position: relative;
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    padding-bottom: 90vh;
+    padding-bottom: 85vh;
 }
 #logo{
     width: 30%;
@@ -208,11 +209,12 @@ label{
     text-align: left;
     margin-inline: 21px;
     font-family: 'Sora';
+    font-size: 18px;
     border: #00000020 solid 1px;
     box-shadow: 2px 2px 4px 2px rgba(0,0,0,.2);
 }
 .step3 label span{
-    padding: 22px;
+    padding: 32px;
     display: block;
 }
 [type=radio]:checked + span{
