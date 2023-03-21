@@ -140,8 +140,9 @@ h2{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 85vw;
+    width: 88vw;
     margin-inline: auto;
+    margin-left: -6px;
     margin-top: 32px;
     background-color: #fff;
     padding: 24px;
