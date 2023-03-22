@@ -11,16 +11,16 @@
     <div class="app">
       <img src="./img/brush.webp" alt="brush" id="brush1" />
       <img src="./img/brush2.webp" alt="brush" id="brush2" />
-      <img id="logo" class="steps" src="./img/OTG.webp" alt="logo OTG" />
-      <div class="game-start hide-me">
+      <img id="logo" src="./img/OTG.webp" alt="logo OTG" />
+      <div class="game-start">
         <div class="header">
           <div class="clip-text">
             <h1>Qual livro da Biblioteca é você<span>?</span></h1>
           </div>
-          <button>Começar</button>
+          <button id="start-quiz" onclick="startQuiz()">Começar</button>
         </div>
       </div>
-      <div class="steps">
+      <div class="steps hide-me" id="steps">
         <div class="clip-text">
           <h2 class="step-title">Question 1/5</h2>
         </div>

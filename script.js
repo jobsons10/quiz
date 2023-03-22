@@ -1,5 +1,15 @@
 var stepNumber = 1;
 var barWidth = 0;
+const startQuiz = () =>{
+  const logo = document.querySelector('#logo')
+  gameSection = document.querySelector('.game-start')
+  stepsSection = document.querySelector('#steps')
+  gameSection.classList.add('hide-me')
+  logo.classList.add('steps')
+  setTimeout(()=>{
+    stepsSection.classList.remove('hide-me')
+  }, 1500)
+}
 const stepNext = async () => {
   console.log(stepNumber);
   const stepImage = document.querySelectorAll(`.step${stepNumber} input`);
@@ -20,7 +30,7 @@ const stepNext = async () => {
   if (stepNumber === 6) {
     const res = await fetch("results.json");
     const data = await res.json();
-    number = 0
+    var number = Math.floor(Math.random() * 10)
     stepContent = document.querySelector('.step-content')
     stepLoader = document.querySelector('.lds-roller')
     resultImg = document.querySelector("#result-img");
