@@ -12,6 +12,13 @@ const startQuiz = () =>{
 }
 const stepNext = async () => {
   console.log(stepNumber);
+  const count = document.querySelector('#count')
+  const stepTitle = document.querySelector('.step-title')
+  if(stepNumber < 5){
+    count.innerHTML = stepNumber + 1
+  } else{
+    stepTitle.innerHTML = 'Resultado'
+  }
   const stepImage = document.querySelectorAll(`.step${stepNumber} input`);
   stepImage.forEach((el) => {
     if (el.checked) {
